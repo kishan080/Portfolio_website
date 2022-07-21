@@ -1,0 +1,435 @@
+/* CSS reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ////navigation styling ////*/
+
+.header{
+    background-color: #131718;
+    box-sizing: border-box;
+    height: 72px;
+}
+
+.navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    color: white;
+    margin: 0px 6px;
+    padding: 3px 0px;
+
+}
+
+.logo{
+    width: 50%;
+    /* border: 2px solid red; */
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifx;
+    padding-left: 55px;
+
+}
+.logo h2{
+    /* border: 1px solid white; */
+    margin: 5px;
+ 
+}
+#home{
+    color: blue;
+}
+
+.logo span{
+    color: blue;
+}
+
+.navigation_menu{
+    width: 50%;
+    /* margin-left: 50px; */
+
+    /* border: 2px solid red; */
+
+}
+.navigation_menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+.navigation_menu li{
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    padding: 18px 10px;
+    margin: 0px 10px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifx;
+    
+}
+
+
+.navigation_menu a{
+    text-decoration: none;
+    color: white;
+}
+.navigation_menu a:hover{
+    color: blue;
+}
+
+/*////// home section styling /////*/
+.home::before{
+    content: "";
+    background: url(../homeImg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.home_content{
+    color:white;
+    margin-top: 100px;
+    margin-left: 55px;
+}
+.home_content p{
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.home_content h1{
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+.home_content span{
+    color: blue;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.home_content button{
+
+    font-size: 30px;
+    background-color:blue;
+    color: white;
+    border: 3px solid blue;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.home_content button:hover{
+    background-color:transparent;
+    color: blue;
+    transition: all 0.4s ease;
+}
+
+
+
+/* /////////// SERVICE///////////// */
+#service_body{
+    background-color: #111111;
+}
+
+.service_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 662px;
+    
+}
+
+.service_heading{
+    
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 38px;
+    margin: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.service_heading p{
+    font-size: 26px;
+    margin: 18px;
+
+}
+
+.service_provide{
+    display: flex;
+
+}
+
+.service_skill{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    height: 14rem;
+    width: 25rem;
+    text-align: center;
+    box-shadow: -1px -1px 14px #7e7d7d;
+   
+}
+.service_skill:hover{
+   background-color: rgb(48, 48, 248);
+   box-shadow: -2px -2px 15px #e3e3e3;
+   transform: scale(1.05);
+   transition: all 0.5s ease;
+}
+.service_skill h1{
+    font-size: 30px;
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+}
+.service_skill p{
+    font-size: 19px;
+}
+
+
+/* //////contact us styling..///////// */
+.contact_section{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.contact_heading{
+    /* border: 2px solid black; */
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.contact_heading h1{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    padding: 11px;
+    font-weight: 500;
+}
+.contact_heading p{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    color: blue;
+}
+
+.contact_main{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 72vh;
+
+}
+
+
+
+.info{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom:20px ;
+}
+.info h3{
+   font-weight: 300;
+   color: #1b1c1c;
+}
+
+.info_page{
+    /* border: 2px solid black; */
+    margin: 21px 37px;
+    width: 98vh;
+    padding-top: 30px;
+    padding: 5px;
+}
+
+.contact_form{
+    /* border: 2px solid black; */
+    margin: 23px 43px;
+    padding: 5px;
+    width: 69vh;
+}
+.form-val{
+    margin: 8px 6px;
+}
+
+.error_class{
+    font-size: 12px;
+    color: red;
+}
+
+.contact_form input, textarea{
+    padding: 7px 15px;
+    margin: 11px 2px;
+    border-radius: 7px;
+    outline: none;
+    border: 0.5px solid grey;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contact_form button{
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: 3px solid blue;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 4px 4px;
+}
+.contact_form button:hover{
+    background-color: transparent;
+    transition: all 0.4s ease;
+    color: blue;
+
+}
+
+
+
+/*////ABOUT ME Styling --///*/
+.about_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+}
+/* about_me => heading */
+.about_heading{
+    text-align: center;
+    margin: 20px;
+}
+.about_heading1{
+    font-size: 40px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 550;
+    padding: 10px;
+}
+.about_para_heading1{
+    font-size: 19px;
+    font-family: Helvetica, sans-serif;
+    color: blue;
+}
+
+.about_heading2 {
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 550;
+    padding: 10px;
+  
+}
+.about_heading2 span{
+    color: blue;
+  
+}
+
+/* //upper div */
+.about_info{
+    display: flex;
+    justify-content: center;
+}
+.about_my_image{
+    display: flex;
+    width: 500px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    margin: 40px;
+  
+}
+
+.about_my_image img{
+    height: 400px;
+   border-radius: 15px;
+   box-shadow: 8px -2px 20px black;
+}
+
+.about_info_myself{
+    width: 550px;
+    /* border: 2px solid black; */
+    margin: 40px;
+    margin-right: 196px;
+    padding: 10px;
+}
+
+#info_para2{
+    margin-right: 100px;
+}
+
+
+
+.about_paragraph2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.about_skill{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about_skill_section{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+}
+
+.progress_skill{
+    margin: 31px;
+    width: 391px;
+    padding-top: 33px;
+    margin-right: 112px;
+    font-size: 19px;
+}
+
+.progress_bar{
+    padding: 19px;
+}
+
+.about_button{
+    font-size: 20px;
+    background-color:  rgb(76, 76, 252);
+    color: white;
+    border: 3px solid  rgb(76, 76, 252);
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+
+.about_button:hover{
+    background-color: transparent;
+    transition: all 0.4s ease;
+    color:  blue;
+}
+
+/* footer styling */
+
+footer{
+    background: #111;
+    padding: 15px 0px;
+    color: #fff;
+    text-align: center;
+    height: 1.5rem;
+}
+footer span a{
+    color: blue;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}

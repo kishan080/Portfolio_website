@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="javascipt/validation.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Portfo<span>lio.</span></h2>
+            </div>
+            <div class="navigation_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" id="home">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="contact_section">
+        <div class="contact_heading">
+            <h1>Contact me</h1>
+            <p>--get In touch--</p>
+        </div>
+
+        <div class="contact_main">
+            <div class="info_page">
+                <h2>Get in touch</h2>
+                <p>Connect with me and stay in touch for projects, feel free to message me for project any time.</p>
+
+                <div class="info" id="info_name">
+                    <h3>Name</h3>
+                    <h3>Kishan</h3>
+                </div>
+                <div class="info" id="info_email">
+                    <h3>Email</h3>
+                    <h3>Kishan080vv@gmail.com</h3>
+                </div>
+                <div class="info" id="info_address">
+                    <h3>Address</h3>
+                    <h3>Mumbai,401404</h3>
+                </div>
+
+            </div>
+            <div class="contact_form">
+                <form action="mybase.php" name="myform" onsubmit="return validate()">
+                    <h2>Message me</h2>
+
+
+                    <div class="form-val">
+                        <input type="text" placeholder="Name" id="fname" onblur="validate1()">
+                        <span class="error_class" id="error1"></span>
+                    </div>
+
+                    <div class="form-val">
+                        <input type="email" " placeholder=" Email" id="femail" onblur="validate2()">
+                        <span class="error_class" id="error2"></span>
+                    </div>
+
+                    <div class="form-val">
+                        <input type="text" placeholder="Subject" id="fsubject" onblur="validate3()">
+                        <span class="error_class" id="error3"></span>
+                    </div>
+
+                    <div class="form-val">
+                        <textarea id="textArea" onblur="validate4()" cols="30" rows="3"
+                            placeholder="Message"></textarea><br>
+                        <span class="error_class" id="error4"></span>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <span>Created By <a href="#">Kishan Verma</a> | <span class="far fa-copyright"></span> 2021 All rights
+            reserved.</span>
+    </footer>
+
+</body>
+
+</html>
